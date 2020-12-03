@@ -7,7 +7,9 @@ body{
     background-color: #f1f3f4;
     font-family: sans-serif;
 }
-
+/*img {
+    height: 75px;
+} */
 .top-navbar{
     height: 57px;
     top: 0;
@@ -186,6 +188,12 @@ body{
 }
 .catprod-disp h2{
     font-size: 24px;
+    display: inline;
+    margin-right: 4px;
+}
+.catprod-disp h3{
+    font-size: 24px;
+    display: inline;
 }
 .catprod-disp::after{
     content: '';
@@ -247,7 +255,7 @@ body{
     padding-bottom: 10px;
     color: black;
     border-radius: 25px;
-    background: red;
+    background: greenyellow;
     padding: 2px;
     padding-top: 10px; 
     width: 100px;

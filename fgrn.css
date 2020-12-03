@@ -7,7 +7,9 @@ body{
     background-color: #f1f3f4;
     font-family: sans-serif;
 }
-
+/*img {
+    height: 75px;
+} */
 .top-navbar{
     height: 57px;
     top: 0;
@@ -122,6 +124,7 @@ body{
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 .ctgry-menu ul li:hover{
     color: #0da2ff;
@@ -207,7 +210,7 @@ body{
 /* --------- FOR PRODUCT BOTTOM DISPLAY ---------- */
 
 .product-bottom .fa{
-    color: #0da2ff;
+    color: black;
     font-size: 10px;
 }
 .product-bottom h3{
@@ -232,7 +235,7 @@ body{
     padding-bottom: 10px;
     color: black;
     border-radius: 25px;
-    background: #26abff;
+    background: yellow;
     padding: 2px;
     padding-top: 10px; 
     width: 100px;
@@ -247,7 +250,7 @@ body{
     padding-bottom: 10px;
     color: black;
     border-radius: 25px;
-    background: red;
+    background: greenyellow;
     padding: 2px;
     padding-top: 10px; 
     width: 100px;
