@@ -1,0 +1,91 @@
+.product-view{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1100px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #0da2ff;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    box-shadow: 0 5px 25px rgba(0,0,0, 0.3);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 100;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 10px 0;
+    font-size: 22px;
+    color: #929292;
+    transform: scaleY(0.8);
+}
+
+.product-view img{
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    margin: 0 50px 0 0;
+}
+
+.product-desc h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-top: 6px;
+    margin-top: 5px;
+    margin-left: 1px;
+    display: inline-block;
+}
+.product-desc h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-top: 15px;
+    margin-left: 1px;
+    display: inline-block;
+}
+.product-desc h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    margin-left: 1px;
+    display: inline-block;
+}
+.product-desc h6{
+    font-size: 20px;
+    font-weight: bold;
+    color: lawngreen;
+    padding-top: 10px;
+    margin-left: 1px;
+}
+.item-desc p{
+    width: auto;
+    height: auto;
+    border: 1px solid #0da2ff;
+    margin: 20px 20px 10px 30px;
+}
+
+.make-offer-btn{
+    width: 180px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #0da2ff;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    border: none;
+    font-weight: bold;
+    float: right;
+}
+.trader-info img{
+    width: 5%;
+}
