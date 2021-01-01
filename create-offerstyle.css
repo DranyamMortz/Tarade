@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.logo{
+    height: 57px;
+    top: 0;
+    position: relative;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #009dff;
+    z-index: 2;
+}
+.logo img{
+    height: 40px;
+    margin: 5px 10px ;
+}
+.product-desc{
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 2px solid #009dbf;
+    width: 50%;
+}
+.product-desc h5{
+    margin-left: 10px;
+    padding-top: auto;
+}
+.product-desc h6{
+    margin-left: 11px;
+    padding-top: 2px;
+    color: #27ae60;
+}
+.offer-checkbox h3{
+    margin: -270px 355px 0 50px;
+    border-left: 5px solid #009dbf;
+    padding-left: 16px;
+    float: right;
+}
+.items{
+    padding-right: 50px;
+    margin-top: -50px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 780px;
+}
+.items .checkbox{
+    padding: 8px 48px;
+    margin: 8px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    position: relative;
+}
+/* FOR BEFORE-CHECKING-THE-CHECKBOX ANIMATION */
+label::before {
+    content: "";
+    background: url("check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+/* FOR CHECKING-THE-CHECKBOX ANIMATION */
+input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+  }
+/* FOR AFTER-CHECKING-THE-CHECKBOX ANIMATION */
+label::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+}
+/* FOR OFFER ITEMS BUTTON */
+.offer-items-btn{
+    width: 120px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #0da2ff;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 180px;
+    font-size: 18px;
+    margin-right: 20px;
+    border: none;
+    font-weight: bold;
+    float: right;
+}
+.popup_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.popup_box{
+  width: 400px;
+  background: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  z-index: 9999;
+  display: none;
+}
+.popup_box i{
+  font-size: 60px;
+  color: #eb9447;
+  border: 5px solid #eb9447;
+  padding: 20px 40px;
+  border-radius: 50%;
+  margin: -10px 0 20px 0;
+}
+.popup_box h1{
+  font-size: 30px;
+  color: #1b2631;
+  margin-bottom: 5px;
+}
+.popup_box .btns{
+  margin: 40px 0 0 0;
+}
+.btns .yes-btn, .btns .no-btn{
+  background: #999999;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+}
+.btns .yes-btn{
+    margin-right: 50px;
+}
+.btns .no-btn{
+    margin-left: 50px;
+}
+.btns .yes-btn:hover{
+  transition: .5s;
+  background: #27ae60;
+}
+.btns .no-btn:hover{
+  transition: .5s;
+  background: #e60000;
+}
