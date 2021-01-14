@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 100px;
+    overflow-x: hidden;
+    margin: 0 100px;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-item .nav-link{
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.dropdown{
+    padding-left: 107px;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+    text-transform: none;
+    font-weight: 500;
+}
+
+.fa{
+    color: #009dff;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link{
+    border-bottom: #009dff 3px solid;
+    padding-bottom: 2px;
+    margin: 0px 3px;
+    color: #000;
+    transition: 0.2s ease 0s;
+}
+
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid #009dff;
+}
+
+/*Profile*/
+.profile-header{
+    width: 100%;
+    display: flex;
+    height: 180px;
+    position: relative;
+    box-shadow: 1px 3px 4px 1px rgba(0,0,0,.2);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg) center no-repeat;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.profile-img{
+    float: left;
+    width: 340px;
+    height: 200px;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    border: 3px solid #59bfff;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,.2);
+    position: absolute;
+    left: 50px; 
+    top: 20px;
+    z-index: 5;
+    background: #fff;
+}
+
+.profile-nav-info{
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    margin-left: 0px;
+}
+
+.profile-nav-info h3{
+    font-variant: normal;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#fff;
+}
+
+.profile-nav-info .address {
+    display: flex;
+    font-weight: 800;
+    font-size: 19px;
+    color: #fff;
+}
+.profile-nav-info .address p{
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.main-bd {
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+}
+
+.profile-side{
+    width: 290px;
+    background: #fff;
+    border: #666;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,.2);
+    padding: 90px 30px 20px; 
+    margin-left: 1px;
+    z-index: 99;
+}
+
+.profile-side p{
+    margin-bottom: 5px;
+    color: rgb(75, 67, 67);
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.profile-side p i{
+    color: #009dff;
+    margin-right: 10px;
+}
+
+.mobile-no i .fa{
+    transform: rotateY(180deg);
+}
+
+button.chatbtn,
+button.createbtn,
+button.reviewbtn {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    background: #fff;
+    font-family: "Bree Serif", sans-serif;
+    font-size: 1rem;
+    margin: 5px 2px; 
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background .3s ease-in-out;
+    box-shadow: 0px 5px 7px 0px rgba(0,0,0,.3);  
+}
+
+button.chatbtn i,
+button.createbtn i,
+button.reviewbtn i{
+    color: #009dff;
+}
+
+button.chatbtn:hover,
+button.createbtn:hover,
+button.reviewbtn:hover{
+    background: rgba(208, 205, 205, 100); 
+    color: #fff;
+}
+
+button.chatbtn i,
+button.createbtn i,
+button.reviewbtn i {
+    margin-right: 5px; 
+}
+ 
+button.reviewbtn{
+    color: #009dff;
+}
+
+.user-rating{
+    display: flex;
+}
+
+.user-rating h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-right: 5px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.user-rating .no-user{
+    font-size: .9rem;
+}
+
+.rate{
+    padding-top: 6px;
+}
+
+.rate i{
+    font-size: .9rem;
+    color: #009dff;
+}
+
+.navi{
+    display: flex;
+    z-index: -1;
+}
+
+.navi ul{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+
+.navi ul li{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out; 
+}
+
+.navi ul li.active,
+.navi ul li:hover{
+    box-shadow: 0px -3px 0px rgba(0, 157, 255, .9)inset;
+}
+
+.profile-body{
+    width: 100%;
+}
+
+.tab{
+    padding-left: 20px;
+    width: 100%;
+}
+
+/*Display user items*/
+
+
+/*Edit Profile Modal*/
+.form-div { margin-top: 100px; border: 1px solid #e0e0e0; }
+#profileDisplay { display: block; height: 210px; width: 60%; margin: 0px auto; border-radius: 50%; }
+.img-placeholder {
+  width: 75%;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  height: 210px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.img-placeholder h4 {
+  margin-top: 40%;
+  color: white;
+}
+.img-div:hover .img-placeholder {
+  display: block;
+  cursor: pointer;
+}
+
+.img-edit{
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    border: 4px solid #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,.2);
+}
+.hero {
+    background-color: #009dff;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+    float: right;
+	
+}
+.popup_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.popup_box{
+  width: 500px;
+  background: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  z-index: 9999;
+  display: none;
+}
+.popup_box h1{
+  font-size: 30px;
+  color: #1b2631;
+  margin-bottom: 5px;
+}
+.popup_box .btns{
+  margin: 40px 0 0 0;
+}
+.btns .yes-btn, .btns .no-btn{
+  background: #999999;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+}
+.btns .yes-btn{
+    margin-right: 50px;
+}
+.btns .no-btn{
+    margin-left: 50px;
+}
+.btns .yes-btn:hover{
+  transition: .5s;
+  background: #27ae60;
+}
+.btns .no-btn:hover{
+  transition: .5s;
+  background: #e60000;
+}
+
